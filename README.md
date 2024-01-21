@@ -26,7 +26,7 @@ Note a likely cause of the incident:
 
   # Solution 
   ## Part 1: Summary of the Problem
-  - UDP Protocol Analysis:
+  *UDP Protocol Analysis:**
   -     Finding: The network analysis indicates the use of the UDP protocol for a domain name resolution request to the DNS server.
   - ICMP Echo Reply Error:
   -     Finding: The ICMP echo reply returns an error message, specifically "udp port 53 unreachable."
