@@ -6,6 +6,9 @@ I will analyze DNS and ICMP traffic in transit using data from a network protoco
 
 ## Network Traffic Analysis
 
+![image](https://github.com/Obi-Chinedu/-Analyze-network-layer-communication/assets/155754242/5a3f5c4d-96a0-4d3a-b8d3-2aa186da1d30)
+
+
 #-- Part 1: Provide a summary of the problem found in the DNS and ICMP traffic log.
 - The UDP protocol reveals that:
 - This is based on the results of the network analysis, which show that the ICMP echo reply returned the error message:
@@ -15,7 +18,6 @@ I will analyze DNS and ICMP traffic in transit using data from a network protoco
 
 
 #-- Part 2: Explain your analysis of the data and provide at least one cause of the incident.
-
 - Time incident occurred:
 - Explain how the IT team became aware of the incident:
 - Explain the actions taken by the IT department to investigate the incident:
