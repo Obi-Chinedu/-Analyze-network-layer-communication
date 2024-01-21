@@ -46,16 +46,16 @@ Note a likely cause of the incident:
 
 ## Part 2: Analysis and Incident Details
 ***Time of Incident:***
-Finding: The incident occurred at the timestamp indicated in the log, e.g., 13:24:32.192571.
+-     Finding: The incident occurred at the timestamp indicated in the log, e.g., 13:24:32.192571.
 
 ***IT Team Awareness:***
-Finding: I informed the IT team to be aware of the incident through routine monitoring of network traffic and analyzing logs.
+-      Finding: I informed the IT team to be aware of the incident through routine monitoring of network traffic and analyzing logs.
 
 ***IT Department's Actions:***
-Finding: I initiated an investigation into the incident, likely triggered by the detection of ICMP errors.
+-      Finding: I initiated an investigation into the incident, likely triggered by the detection of ICMP errors.
 
 ***Key Findings:***
-Details: The investigation revealed repeated ICMP packets sent with the same delivery error. The port affected was UDP port 53, associated with DNS service.
+-     Details: The investigation revealed repeated ICMP packets sent with the same delivery error. The port affected was UDP port 53, associated with DNS service.
 
 ***Likely Cause:***
-Finding: The likely cause of the incident is that no service was listening on the DNS port (port 53), preventing the successful resolution of the domain name and impeding website access. This could be due to a misconfiguration, service unavailability, or a firewall issue.
+-     Finding: The likely cause of the incident is that no service was listening on the DNS port (port 53), preventing the successful resolution of the domain name and impeding website access. This could be due to a misconfiguration, service unavailability, or a firewall issue.
