@@ -33,8 +33,9 @@ Note a likely cause of the incident:
 
   ***ICMP Echo Reply Error:***
   -     Finding: The ICMP echo reply returns an error message, specifically "udp port 53 unreachable."
-  ``The second and third lines show an ICMP error message indicating that the ICMP packet was undeliverable to the port of the DNS server.``
-  - 
+  - ![image](https://github.com/Obi-Chinedu/-Analyze-network-layer-communication/assets/155754242/634e4439-a8c5-4908-862b-c52091b47711)
+  ``The second  lines show an ICMP error message indicating that the ICMP packet was undeliverable to the port of the DNS server.``
+    
   ***Port in the Error Message:***
   -     Finding: The error message mentions port 53, a well-known port for DNS service.
   ``The log specifies the protocol and port number (UDP port 53), signifying an attempt to resolve the domain name using the DNS server's address over port 53. The message "unreachable" indicates that the message did not reach the DNS server, implying that no service was listening on the DNS port.``
