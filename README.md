@@ -33,7 +33,7 @@ Note a likely cause of the incident:
 
   ***ICMP Echo Reply Error:***
   -     Finding: The ICMP echo reply returns an error message, specifically "udp port 53 unreachable."
-  - ![image](https://github.com/Obi-Chinedu/-Analyze-network-layer-communication/assets/155754242/634e4439-a8c5-4908-862b-c52091b47711)
+  - ![image](https://github.com/Obi-Chinedu/-Analyze-network-layer-communication/assets/155754242/4e3922aa-c7d7-4226-a117-5863b8bf9a64)
   ``The second  lines show an ICMP error message indicating that the ICMP packet was undeliverable to the port of the DNS server.``
     
   ***Port in the Error Message:***
@@ -42,3 +42,20 @@ Note a likely cause of the incident:
   
   ***Likely Issue:***
   -     Finding: The most likely issue is that the DNS resolution request over UDP to port 53 was unsuccessful, as indicated by the "unreachable" message. This suggests that no service was listening on the DNS port, impeding the retrieval of the IP address for yummyrecipesforme.com.
+
+
+## Part 2: Analysis and Incident Details
+***Time of Incident:***
+Finding: The incident occurred at the timestamp indicated in the log, e.g., 13:24:32.192571.
+
+***IT Team Awareness:***
+Finding: I informed the IT team to be aware of the incident through routine monitoring of network traffic and analyzing logs.
+
+***IT Department's Actions:***
+Finding: I initiated an investigation into the incident, likely triggered by the detection of ICMP errors.
+
+***Key Findings:***
+Details: The investigation revealed repeated ICMP packets sent with the same delivery error. The port affected was UDP port 53, associated with DNS service.
+
+***Likely Cause:***
+Finding: The likely cause of the incident is that no service was listening on the DNS port (port 53), preventing the successful resolution of the domain name and impeding website access. This could be due to a misconfiguration, service unavailability, or a firewall issue.
