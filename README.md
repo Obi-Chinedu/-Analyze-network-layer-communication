@@ -26,7 +26,9 @@ Note a likely cause of the incident:
 
   # Solution 
   ## Part 1: Summary of the Problem
-  - UDP Protocol Analysis:Finding: The network analysis indicates the use of the UDP protocol for a domain name resolution request to the DNS server.
-  - ICMP Echo Reply Error:Finding: The ICMP echo reply returns an error message, specifically "udp port 53 unreachable."
+  - UDP Protocol Analysis:
+      Finding: The network analysis indicates the use of the UDP protocol for a domain name resolution request to the DNS server.
+  - ICMP Echo Reply Error:
+  -     Finding: The ICMP echo reply returns an error message, specifically "udp port 53 unreachable."
   - Port in the Error Message:Finding: The error message mentions port 53, a well-known port for DNS service.
   - Likely Issue:Finding: The most likely issue is that the DNS resolution request over UDP to port 53 was unsuccessful, as indicated by the "unreachable" message. This suggests that no service was listening on the DNS port, impeding the retrieval of the IP address for yummyrecipesforme.com.
